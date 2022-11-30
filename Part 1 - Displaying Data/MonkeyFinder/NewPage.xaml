@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonkeyFinder.NewPage"
+             Title="NewPage1">
+    <ScrollView VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" Padding="20,0">
+
+            <Frame Grid.Row="0" BorderColor="White" VerticalOptions="Start" HeightRequest="160" HasShadow="False" CornerRadius="20" Margin="0,45,0,20" Padding="0" IsClippedToBounds="True">
+                <Image Source="timeline" Aspect="AspectFill"/>
+            </Frame>
+
+            <Frame Grid.Row="1" Margin="0,-90,0,0" BorderColor="White" HorizontalOptions="Center" WidthRequest="110" HeightRequest="{OnPlatform iOS='110', Android='20'}" HasShadow="False" CornerRadius="55" Padding="0" IsClippedToBounds="True">
+                <Image Source="modelprofile" Aspect="AspectFill"/>
+            </Frame>
+
+            <Label Grid.Row="2" Text="Vincent van Gogh" FontAttributes="Bold" TextColor="#383b67" HorizontalTextAlignment="Center" Margin="0,20,0,0" FontSize="22"/>
+
+            <Grid Grid.Row="3" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,20,0,0">
+            </Grid>
+
+            <Label Grid.Row="4" Text="" 
+                    FontAttributes="Bold"
+                    TextColor="#383b67" 
+                    HorizontalTextAlignment="Start" 
+                    Margin="0,40,0,20"
+                    FontSize="20"/>
+
+            <Label Grid.Row="5" TextColor="#8d92b9" 
+                    HorizontalTextAlignment="Start" 
+                    FontSize="15" 
+                    Text=""/>
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
